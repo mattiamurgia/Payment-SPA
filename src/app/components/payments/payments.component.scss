@@ -1,0 +1,32 @@
+@import '../../custom-scss/mixin.scss';
+@import '../../custom-scss/typography.scss';
+
+.main {
+  background-color: #EEEAFE;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh !important;
+
+  .heading-section {
+    margin-top: 5rem;
+
+    .heading-title {
+      font-size: 2rem;
+      color: $heading-color;
+      font-family: $heading-font-family;
+    }
+  }
+
+  .btn-back {
+    max-width: 50px !important;
+    @include button-outline;
+  }
+
+  .box-description {
+    max-width: 50vw;
+    color: $paragraph-color;
+    font-family: $paragraph-font-family;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}

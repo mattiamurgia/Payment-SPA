@@ -1,0 +1,32 @@
+@import '../../../../../../custom-scss/typography.scss';
+
+.section-page {
+  border-radius: 20px;
+  max-width: 40rem;
+  font-weight: 500;
+  @media screen and (min-width: 250px) and (max-width:767px) {
+    max-width: 300px;
+  }
+
+  .img-section {
+    min-height: auto;
+    max-width: 15.2rem;
+    @media screen and (min-width: 250px) and (max-width:767px) {
+      padding: 8px 0;
+    }
+  }
+
+  .section-description {
+    font-size: 1.125rem;
+    font-family: $paragraph-font-family;
+    color: $paragraph-color;
+    line-height: 2rem;
+  }
+
+  .section__score {
+    &--title {
+      font-family: $heading-font-family;
+      margin-bottom: 2px;
+    }
+  }
+}

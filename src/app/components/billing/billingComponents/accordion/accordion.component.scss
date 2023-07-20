@@ -1,0 +1,30 @@
+@import "../../../../custom-scss/typography.scss";
+
+.container-faq {
+  padding: 2rem;
+
+  .accordion {
+    padding-top: 2rem !important;
+    max-width: 100vw !important;
+
+    .accordion-header {
+      .accordion-button {
+        font-family: $heading-font-family;
+        color: $heading-color;
+        font-weight: 500;
+      }
+    }
+
+    .accordion-body {
+      font-family: $paragraph-font-family;
+      color: $paragraph-color !important;
+      font-weight: 500;
+      padding: 10px !important;
+    }
+
+    .accordion-body,
+    .accordion-button {
+      background-color: rgba(242, 239, 255, 0.817) !important;
+    }
+  }
+}

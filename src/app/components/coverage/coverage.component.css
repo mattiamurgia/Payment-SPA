@@ -1,0 +1,7 @@
+.main {
+  background-color: rgb(209, 255, 4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh !important;
+}/*# sourceMappingURL=coverage.component.css.map */

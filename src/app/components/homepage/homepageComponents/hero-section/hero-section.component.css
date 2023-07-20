@@ -1,0 +1,47 @@
+.main-container {
+  background-image: url("../../../assets/Image/background-image.webp");
+  background-position: cover, cover;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+.main-container h1 {
+  font-size: 4rem !important;
+  line-height: 5rem !important;
+  font-family: "Outfit";
+  font-weight: 600;
+  color: #0f0840;
+}
+.main-container h1 span {
+  color: #ffb459;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.main-container a {
+  width: 10rem;
+  height: 100%;
+  color: #0f0840;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #0f0840;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 22px;
+}
+.main-container a::before {
+  content: url("https://uploads-ssl.webflow.com/635e20f77318521304947d8d/635e47c161099ee2782818f8_google%20play.svg");
+  width: 16px;
+  height: 18px;
+  vertical-align: -3px;
+  margin-right: 5px;
+}
+.main-container .rating-icon::after {
+  content: url("https://uploads-ssl.webflow.com/635e20f77318521304947d8d/635e487e1407d856a2c4b824_rating.svg");
+}
+
+.score-icon::before {
+  content: "4.9/5 - Android";
+  font-family: "Satoshi";
+  font-weight: 700;
+}/*# sourceMappingURL=hero-section.component.css.map */

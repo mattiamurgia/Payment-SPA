@@ -1,0 +1,23 @@
+@import '../../../../custom-scss/typography.scss';
+
+.main-section {
+  .title-icon {
+    font-family: $heading-font-family;
+    color: $heading-color;
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+
+  .description-icon {
+    font-family: $paragraph-font-family;
+    color: $paragraph-color;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .icon-image {
+    max-width: 12rem;
+    min-height: auto;
+    margin-top: 10px;
+  }
+}

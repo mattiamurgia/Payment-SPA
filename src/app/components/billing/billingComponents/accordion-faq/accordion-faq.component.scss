@@ -1,0 +1,27 @@
+@import "../../../../custom-scss/typography.scss";
+
+.faq__style {
+  font-family: $heading-font-family;
+  font-weight: 500;
+  padding: 2rem;
+  letter-spacing: 2px;
+  line-height: 1rem;
+
+  &--image {
+    max-width: 18rem;
+    min-height: 3rem;
+  }
+
+  &--heading {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    color: $heading-color;
+  }
+
+  &--paragraph {
+    font-family: $paragraph-font-family;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    color: $paragraph-color;
+  }
+}

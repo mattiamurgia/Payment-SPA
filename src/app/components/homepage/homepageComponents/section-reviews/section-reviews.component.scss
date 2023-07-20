@@ -1,0 +1,25 @@
+@import '../../../../custom-scss/typography.scss';
+
+.title__section--review {
+  font-family: $heading-font-family;
+  color: $heading-color;
+  line-height: 1.3rem;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.icon-arrow {
+  color: black;
+  font-size: 2rem;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  &:hover {
+    color: #FFB559;
+    background-color: black;
+    border-radius: 50%;
+    transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+  }
+}

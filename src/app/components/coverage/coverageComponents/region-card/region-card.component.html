@@ -1,0 +1,26 @@
+<div class="p-2 m-2 position-relative">
+  <div class="card text-center">
+    <div class="card-body">
+      <div class="card-heading d-flex justify-content-around">
+        <img [src]="regionData.flags?.svg" class="card-image">
+
+        <div class="mx-auto d-flex align-items-center">
+          <div class="d-flex justify-content-around me-3 p-1">
+            <h5 class="d-inline">{{regionData.name?.common}}</h5>
+          </div>
+          <div class="d-flex justify-content-around ms-2 p-1">
+            <h6 class="text-center mb-1 d-inline pe-2">{{regionData.cca2}}</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex flex-row justify-content-center my-1 ms-4">
+      <p class="card-text mx-1 my-1">{{regionData.capital}}</p>
+      <p>{{regionData.flag}}</p>
+    </div>
+    <div class="text-start ms-3 mb-2">
+      <a [href]="regionData.maps.googleMaps" class="card-link ms-1" target="_blank">
+        <img src="../../../assets/Image/google-maps.png" alt="" class="icon-map me-2">Address</a>
+    </div>
+  </div>
+</div>

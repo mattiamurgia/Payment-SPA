@@ -1,0 +1,84 @@
+<nav
+  class="navbar navbar-expand-lg p-3 fixed-top"
+  [ngClass]="{
+    'navbar-transparent': isNavbarTransparent,
+    'navbar-white': !isNavbarTransparent
+  }"
+>
+  <div class="container-fluid">
+    <div class="mobile-misure">
+      <a class="navbar-brand ms-lg-3 ms-md-2" href="#">
+        <img
+          src="https://uploads-ssl.webflow.com/635e20f77318521304947d8d/635e30bb78332f77403762be_logo.svg"
+          alt
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="offcanvas offcanvas-end d-lg-none"
+        tabindex="-1"
+        id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel"
+      >
+        <div class="offcanvas-header p-4 mb-5">
+          <a class="navbar-brand ms-lg-3 ms-md-2" href="#">
+            <img
+              src="https://uploads-ssl.webflow.com/635e20f77318521304947d8d/635e30bb78332f77403762be_logo.svg"
+              alt
+            />
+          </a>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body mt-5 p-4">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/billing']"
+                >Pricing</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#review">Reviews</a>
+            </li>
+          </ul>
+          <div class="me-3 mt-5">
+            <a href class="btn-started">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav mx-auto">
+        <a class="nav-link" aria-current="page" href="#home">Home</a>
+        <a class="nav-link ms-4" href="#service">Service</a>
+        <a class="nav-link ms-4" [routerLink]="['/billing']"
+          >Pricing</a
+        >
+        <a class="nav-link ms-4" href="#review">Reviews</a>
+      </div>
+      <div class="me-3">
+        <a href class="btn-started">Get Started</a>
+      </div>
+    </div>
+  </div>
+</nav>

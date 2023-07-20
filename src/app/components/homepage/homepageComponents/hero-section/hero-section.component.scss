@@ -1,0 +1,48 @@
+@import "../../../../custom-scss/mixin.scss";
+@import '../../../../custom-scss/typography.scss';
+
+.main-container {
+  background-image: url("../../../../../assets/Image/background-image.webp");
+  background-position: cover, cover;
+  min-width: 100vw;
+  min-height: 100vh;
+
+  h1 {
+    font-size: 4rem !important;
+    line-height: 5rem !important;
+    font-family: $heading-font-family;
+    font-weight: 600;
+    color: $heading-color;
+
+    span {
+      color: #ffb459;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+  }
+
+  a {
+    @include button-outline;
+
+    &::before {
+      content: url("https://uploads-ssl.webflow.com/635e20f77318521304947d8d/635e47c161099ee2782818f8_google%20play.svg");
+      width: 16px;
+      height: 18px;
+      vertical-align: -3px;
+      margin-right: 5px;
+    }
+  }
+
+  .rating-icon {
+    &::after {
+      content: url("https://uploads-ssl.webflow.com/635e20f77318521304947d8d/635e487e1407d856a2c4b824_rating.svg");
+    }
+  }
+}
+
+.score-icon {
+  &::before {
+    content: "4.9/5 - Android";
+    font-family: $paragraph-font-family;
+    font-weight: 700;
+  }
+}

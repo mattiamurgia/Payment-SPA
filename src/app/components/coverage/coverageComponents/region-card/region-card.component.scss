@@ -1,0 +1,36 @@
+@import '../../../../custom-scss/typography.scss';
+
+.card {
+  max-width: 250px;
+  width: 100%;
+  max-height: 200px;
+  font-family: $heading-font-family;
+  color: $heading-color;
+  line-height: 1rem;
+  border: 2px solid $violet-color;
+  word-wrap: inherit;
+  font-weight: 300;
+
+  .card-heading {
+    .card-title {
+      font-size: 20px!important;
+    }
+
+    .card-image {
+      max-width: 40px;
+      object-fit: cover;
+      border-radius: 10%;
+      border: 1px solid black;
+      margin-right: 10px;
+    }
+  }
+
+  .card-link {
+    color: $paragraph-color;
+    font-family: $paragraph-font-family;
+  }
+
+  .icon-map {
+    max-width: 1.5rem;
+  }
+}

@@ -1,0 +1,56 @@
+.navbar-transparent {
+  background-color: transparent !important;
+}
+
+.navbar-white {
+  background-color: white !important;
+}
+
+@media screen and (min-width: 250px) and (max-width: 991px) {
+  .mobile-misure {
+    min-width: 93vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  .mobile-misure button {
+    background-color: transparent !important;
+    border: none !important;
+  }
+  .mobile-misure button span {
+    background-image: rgb(0, 0, 0) !important;
+  }
+}
+
+.navbar-nav a {
+  font-family: "Outfit";
+  font-weight: 500;
+  font-size: 17px;
+  color: black !important;
+}
+.navbar-nav a:hover {
+  color: rgb(80, 47, 245) !important;
+}
+
+.btn-started {
+  width: 8rem;
+  height: 100%;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  background-image: linear-gradient(to right, #4e2ff5, #793aff);
+  font-size: red;
+  border: 0;
+  padding: 9px 15px;
+}
+.btn-started:hover {
+  background-image: linear-gradient(#ffb459, #ffb459);
+  color: black;
+}/*# sourceMappingURL=navbar.component.css.map */

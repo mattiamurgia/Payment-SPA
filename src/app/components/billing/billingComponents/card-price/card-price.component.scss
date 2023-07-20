@@ -1,0 +1,52 @@
+@import "../../../../custom-scss/mixin.scss";
+@import "../../../../custom-scss/typography.scss";
+
+.card-price {
+  color: $heading-color;
+  display: flex;
+  align-items: center;
+  max-width: 18rem;
+  background-color: #fff;
+  border-radius: 20px;
+  border-color: black !important;
+  font-family: $heading-font-family;
+  font-weight: 500;
+  line-height: 3rem;
+
+  .card-header {
+    border-bottom: none !important;
+  }
+
+  h4 {
+    padding: 2px !important;
+    font-size: 1.25rem !important;
+    line-height: 1.5rem !important;
+  }
+
+  h1 {
+    padding: 2% !important;
+    font-size: 40px;
+  }
+
+  p {
+    font-family: $paragraph-font-family;
+    font-size: 1rem;
+    color: $paragraph-color;
+    margin-bottom: 2rem;
+  }
+
+  .btn-card {
+    @include button-cs;
+  }
+
+  li {
+    font-family: $paragraph-font-family;
+    font-size: 1rem;
+
+    &::before {
+      margin-right: 10px;
+      font-family: "Font Awesome";
+      content: "\f00c";
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../custom-scss/mixin.scss";
+@import '../../custom-scss/typography.scss';
+
+.main {
+  background-image: linear-gradient(to left, #e1efff,#badbfb);
+  min-height: 100vh !important;
+
+  .head__container {
+    margin-top: 6rem;
+    color: $heading-color;
+    font-family: $heading-font-family;
+    word-spacing: 2px;
+
+    .head__description {
+      color: $paragraph-color;
+      font-family: $paragraph-font-family;
+      font-weight: 500;
+    }
+
+    .head-image {
+      max-width: 8rem;
+    }
+  }
+
+  .btn-back {
+    max-width: 50px !important;
+    @include button-outline;
+  }
+}

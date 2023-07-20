@@ -1,0 +1,10 @@
+<div class="card text-start">
+  <div class="card-body card-style d-flex flex-row justify-content-start align-items-center">
+    <div>
+      <img [src]="dataCard.img" class="card-img-top me-2" alt="...">
+    </div>
+    <h3 class="card-title">{{dataCard.title}}</h3>
+  </div>
+  <p class="card-text">{{dataCard.description}}</p>
+  <a [routerLink]="dataCard.route" class="text-center">Info</a>
+</div>

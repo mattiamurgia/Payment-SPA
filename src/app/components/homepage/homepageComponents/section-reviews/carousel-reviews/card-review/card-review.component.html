@@ -1,0 +1,29 @@
+<div
+  class="section-page d-flex m-3 p-3 bg-light d-flex flex-column flex-md-row justify-content-sm-center align-items-center"
+>
+  <div class="d-flex justify-content-center align-items-center img-section">
+    <img rel="preload" [src]="review.img" alt="" />
+  </div>
+  <div class="">
+    <div
+      class="d-flex flex-column justify-content-center align-items-start p-4"
+    >
+      <img
+        src="https://uploads-ssl.webflow.com/635e20f77318521304947d8d/635e9192b5963610a270c804_review%20quote.svg"
+        alt=""
+        class="mb-3"
+      />
+      <p class="d-inline-block section-description">
+        {{ review.description }}
+      </p>
+      <div class="section__score d-flex flex-column">
+        <p class="section__score--title">{{ review.title }}</p>
+        <img
+          src="https://uploads-ssl.webflow.com/635e20f77318521304947d8d/635e921deb1da5489b9cbd58_reviewer%20rating.svg"
+          alt=""
+          class="section__score--star"
+        />
+      </div>
+    </div>
+  </div>
+</div>

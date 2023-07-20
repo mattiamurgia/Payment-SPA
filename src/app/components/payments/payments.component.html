@@ -1,0 +1,65 @@
+<div class="main">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center heading-section">
+        <h1 class="heading-title">Un modo migliore di pagare</h1>
+        <p class="heading-subtitle">
+          Qualunque cosa vuoi, ovunque tu sia, crediamo di avere la carta giusta
+          per tutto ciò che conta.
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div
+        class="row text-center mt-2 flex-lg-row flex-sm-column justify-content-center align-items-center">
+        <div
+          class="col-lg-4 col-md-6 col-sm-12 p-1 mb-2 d-flex flex-column justify-content-center align-items-center">
+          <img
+            src="https://usa.visa.com/content/dam/VCOM/global/pay-with-visa/images/credit-card-icon-security-400x225.png"
+            width="45%" />
+          <p class="text-center wrapper mt-3 box-description">
+            Se la tua carta è stata smarrita o rubata, possiamo collaborare con
+            la tua banca per spedirla in tutto il mondo entro 24-72 ore.
+          </p>
+        </div>
+        <div
+          class="col-lg-4 col-md-6 col-sm-12 p-1 mb-2 d-flex flex-column justify-content-center align-items-center">
+          <img
+            src="https://usa.visa.com/content/dam/VCOM/global/pay-with-visa/images/credit-card-icon-protection-400x225.png"
+            alt
+            width="45%" />
+          <p class="text-center wrapper mt-3 box-description">
+            I viaggi e gli acquisti al dettaglio sono protetti da una copertura
+            completa.
+          </p>
+        </div>
+        <div
+          class="col-lg-4 col-md-6 col-sm-12 p-1 mb-2 d-flex flex-column justify-content-center align-items-center">
+          <img
+            src="https://usa.visa.com/content/dam/VCOM/global/pay-with-visa/images/credit-card-icon-benefits-400x225.png"
+            width="45%" />
+          <p class="text-center wrapper mt-3 box-description">
+            Payment offre una gamma di esclusivi vantaggi di viaggio,
+            ristorazione e intrattenimento che si adattano al tuo stile di vita.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container p-2">
+      <div class="row">
+        <div
+          *ngFor="let item of dataCardsDB; let i = index"
+          class="d-flex justify-content-center align-items-center">
+          <app-supported-cards
+            [supportedData]="item"
+            [index]="i"></app-supported-cards>
+        </div>
+      </div>
+    </div>
+    <div class="row d-flex align-items-start">
+      <button (click)="goBack()" class="ms-4 mb-5 btn-back text-center">
+        <fa-icon [icon]="faHandPointLeft"> </fa-icon>
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+@import "../../custom-scss/mixin.scss";
+
+.main {
+  min-height: 100vh !important;
+  background-image: url("https://uploads-ssl.webflow.com/635e20f77318521304947d8d/6367b3e8321d9714dc3e6d48_background%20v2.webp");
+  background-attachment: fixed;
+
+  .btn-back {
+    max-width: 50px !important;
+    @include button-outline;
+  }
+}

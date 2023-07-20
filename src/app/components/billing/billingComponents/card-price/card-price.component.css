@@ -1,0 +1,60 @@
+.card-price {
+  color: #0f0840;
+  display: flex;
+  align-items: center;
+  max-width: 18rem;
+  background-color: #fff;
+  border-radius: 20px;
+  border-color: black !important;
+  font-family: "Outfit";
+  font-weight: 500;
+  line-height: 2rem;
+}
+.card-price .card-header {
+  border-bottom: none !important;
+}
+.card-price h4 {
+  font-size: 1.25rem !important;
+  line-height: 2rem !important;
+}
+.card-price h1 {
+  font-size: 40px;
+}
+.card-price p {
+  font-family: "Satoshi";
+  font-size: 1rem;
+  color: #54506f;
+  margin-bottom: 2rem;
+}
+.card-price .btn-card {
+  width: 8rem;
+  height: 100%;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  background-image: linear-gradient(to right, #4e2ff5, #793aff);
+  font-size: red;
+  border: 0;
+  padding: 9px 15px;
+}
+.card-price .btn-card:hover {
+  background-image: linear-gradient(#ffb459, #ffb459);
+  color: black;
+}
+.card-price li {
+  font-family: "Satoshi";
+  font-size: 1rem;
+}
+.card-price li::before {
+  margin-right: 10px;
+  font-family: "Font Awesome";
+  content: "\f00c";
+}/*# sourceMappingURL=card-price.component.css.map */

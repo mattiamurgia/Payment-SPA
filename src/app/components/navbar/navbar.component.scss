@@ -1,0 +1,42 @@
+@import "./../../custom-scss/mixin.scss";
+@import "./../../custom-scss/typography.scss";
+
+.navbar-transparent {
+  background-color: transparent !important;
+}
+
+.navbar-white {
+  background-color: white !important;
+}
+
+.mobile-misure {
+  @media screen and (min-width: 250px) and (max-width: 991px) {
+    min-width: 93vw;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      background-color: transparent !important;
+      border: none !important;
+
+      span {
+        background-image: rgb(0, 0, 0) !important;
+      }
+    }
+  }
+}
+
+.navbar-nav a {
+  font-family: $heading-font-family;
+  font-weight: 500;
+  font-size: 17px;
+  color: black !important;
+
+  &:hover {
+    color: rgb(80, 47, 245) !important;
+  }
+}
+
+.btn-started {
+  @include button-cs;
+}

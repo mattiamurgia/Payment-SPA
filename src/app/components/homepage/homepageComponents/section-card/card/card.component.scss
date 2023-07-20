@@ -1,0 +1,42 @@
+@import "../../../../../custom-scss/mixin.scss";
+@import "../../../../../custom-scss/typography.scss";
+
+.card {
+  padding: 2rem;
+  width: 22rem;
+  border-radius: 10%;
+  line-height: 2;
+}
+
+.card-title {
+  margin-top: 10px !important;
+}
+
+.card-style {
+  vertical-align: baseline;
+
+  img {
+    max-width: 2rem;
+    vertical-align: baseline !important;
+  }
+
+  h3 {
+    font-size: 26px;
+    font-weight: 500;
+    font-family: $heading-font-family;
+    vertical-align: baseline !important;
+    display: inline !important;
+    color: $heading-color;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    color: $paragraph-color;
+  }
+}
+
+a {
+  width: 5rem !important;
+  @include button-outline;
+}

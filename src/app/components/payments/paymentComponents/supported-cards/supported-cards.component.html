@@ -1,0 +1,13 @@
+<div class="section-page p-5 d-flex m-3 flex-column-reverse "
+  [ngClass]="index %2 === 0 ? 'flex-md-row' : 'flex-md-row-reverse'">
+  <div
+    class="d-inline-block col-md-6 d-flex justify-content-center align-items-center img-section">
+    <img rel="preload"
+      [src]="supportedData.img">
+  </div>
+  <div
+    class="col-md-6 d-flex flex-column justify-content-center align-items-center p-3">
+    <h1 class="d-inline-block section-tile">{{supportedData.title}}</h1>
+    <p class="d-inline-block section-description text-center">{{supportedData.description}}</p>
+  </div>
+</div>

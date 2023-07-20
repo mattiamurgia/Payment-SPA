@@ -1,0 +1,17 @@
+<div class="container-fluid container-card" id="service">
+  <div class="row">
+    <div class="mt-5 text-center text-lg-start text-style">
+      <h2>La tua Fintech App</h2>
+      <p>Segui la rivoluzione dei metodi di pagamento con un tocco!!</p>
+    </div>
+  </div>
+  <div class="row">
+    <div
+      class="col p-2 mt-5 d-flex justify-content-around align-items-center align-items-center flex-wrap"
+    >
+      <div *ngFor="let item of cardData">
+        <app-card [dataCard]="item" class="m-5"></app-card>
+      </div>
+    </div>
+  </div>
+</div>

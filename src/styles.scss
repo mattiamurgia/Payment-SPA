@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "./app/custom-scss/mixin.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none !important;
+  outline-style: none;
+  border-style: none;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+@font-face {
+  font-family: "Outfit";
+  src: local("Outfit"), url("./assets/Font/Outfit-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Satoshi";
+  src: local("Satoshi"), url("./assets/Font/Satoshi-Variable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Font Awesome";
+  src: local("Font Awesome"), url("./assets/Font/fa-brands-400.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Font Awesome";
+  src: local("Font Awesome"), url("./assets/Font/fa-regular-400.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Font Awesome";
+  src: local("Font Awesome"), url("./assets/Font/fa-solid-900.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Font Awesome";
+  src: local("Font Awesome"), url("./assets/Font/fa-v4compatibility.ttf") format("truetype");
+}
+
+body,
+html {
+  height: 100%;
+  background: linear-gradient(to right, #f9e7fe, #dafcfc);
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

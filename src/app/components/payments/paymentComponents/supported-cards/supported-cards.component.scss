@@ -1,0 +1,30 @@
+@import '../../../../custom-scss/typography.scss';
+
+.section-page {
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.138);
+  -webkit-backdrop-filter: blur( 4px );
+  backdrop-filter: blur( 4px );
+  border-radius: 30px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  max-width: 80vw;
+
+  .img-section {
+    padding: 20px 30px;
+    max-width: 28rem;
+  }
+
+  .section-tile {
+    color: $heading-color;
+    font-family: $paragraph-color;
+    font-size: 2.5rem;
+  }
+
+  .section-description {
+    color: $paragraph-color;
+    font-family: $paragraph-font-family;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+}

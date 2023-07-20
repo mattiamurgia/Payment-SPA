@@ -1,0 +1,56 @@
+@import "../../../../custom-scss/typography.scss";
+
+.section-price {
+  margin-top: 2%;
+
+  h1 {
+    font-size: 2.875rem;
+    font-family: $heading-font-family;
+    font-weight: 500;
+    line-height: 4rem;
+    color: $heading-color;
+  }
+
+  p {
+    font-family: $paragraph-color;
+    font-size: 1.2rem;
+    line-height: 2.125rem;
+    color: $paragraph-color;
+    font-weight: 500;
+  }
+}
+
+.checkbox-style {
+  min-width: 18rem !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  label {
+    width: 80px;
+    color: $heading-color;
+    text-align: center;
+    font-family: $paragraph-font-family;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+
+  input {
+    width: 72px !important;
+    height: 30px !important;
+    background-color: transparent;
+    border: 2px solid $violet-color !important;
+    display: inline;
+    margin-right: -2.3rem;
+  }
+
+  .form-check-input {
+    &:checked,
+    &:focus {
+      border: 2px solid $violet-color !important;
+      outline: 0;
+      box-shadow: none !important;
+    }
+  }
+}

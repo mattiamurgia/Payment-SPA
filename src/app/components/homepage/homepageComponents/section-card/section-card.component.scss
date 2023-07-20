@@ -1,0 +1,27 @@
+@import "../../../../custom-scss/typography.scss";
+
+.container-card {
+  height: auto;
+  background-image: linear-gradient(to right, #4e2ff5, #793aff);
+}
+
+.text-style {
+  color: white;
+  margin-left: 1rem;
+
+  h2 {
+    font-size: 3rem;
+    font-family: $heading-font-family;
+    @media screen and (min-width: 250px) and (max-width:600px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  p {
+    font-size: 1.3em;
+    font-family: $paragraph-font-family;
+    @media screen and (min-width: 250px) and (max-width:600px) {
+      font-size: 1rem;
+    }
+  }
+}

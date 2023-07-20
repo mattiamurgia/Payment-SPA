@@ -1,0 +1,46 @@
+.section-price {
+  margin-top: 2%;
+}
+.section-price h1 {
+  font-size: 2.875rem;
+  font-family: "Outfit";
+  font-weight: 500;
+  line-height: 4rem;
+  color: #0f0840;
+}
+.section-price p {
+  font-family: "Satoshi";
+  font-size: 1.2rem;
+  line-height: 2.125rem;
+  color: #54506f;
+  font-weight: 500;
+}
+
+.checkbox-style {
+  min-width: 18rem !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkbox-style label {
+  width: 80px;
+  color: #0f0840;
+  text-align: center;
+  font-family: "Outfit";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+}
+.checkbox-style input {
+  width: 72px !important;
+  height: 30px !important;
+  background-color: transparent;
+  border: 2px solid #5a2ff5 !important;
+  display: inline;
+  margin-right: -2.3rem;
+}
+.checkbox-style .form-check-input:checked, .checkbox-style .form-check-input:focus {
+  border: 2px solid #5a2ff5 !important;
+  outline: 0;
+  box-shadow: none !important;
+}/*# sourceMappingURL=section-billing.component.css.map */
